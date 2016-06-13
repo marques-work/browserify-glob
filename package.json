@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "simple glob handling for browserify",
   "main": "index.js",
+  "repository": "https://github.com/kasperlewau/browserify-glob",
   "scripts": {
     "test": "./node_modules/.bin/ava",
     "lint": "./node_modules/.bin/semistandard",
@@ -11,14 +12,24 @@
   },
   "keywords": [
     "browserify",
-    "glob"
+    "glob",
+    "browserify-glob",
+    "globify"
   ],
   "files": [
     "lib",
     "bin",
     "index.js"
   ],
-  "author": "",
+  "author": {
+    "name": "Kasper Lewau",
+    "email": "lewauu@gmail.com",
+    "url": "https://github.com/kasperlewau"
+  },
+  "semistandard": {
+    "parser": "babel-eslint"
+  },
+  "bin": "./bin/cli.js",
   "license": "MIT",
   "dependencies": {
     "browserify": "^13.0.1",
@@ -27,6 +38,7 @@
   "devDependencies": {
     "ava": "^0.15.2",
     "babel-cli": "^6.9.0",
+    "babel-eslint": "^6.0.4",
     "babel-preset-es2015": "^6.9.0",
     "semistandard": "^8.0.0"
   }

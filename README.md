@@ -11,7 +11,7 @@ of the vanilla [`browserify`](https://github.com/substack/node-browserify) usage
 ### cli
 `$ browserify-glob **/*.spec.js > specs.js`
 
-`$ browserify-glob **/*.spec.js | tap-closer | smoker | tap-dots` :rocket:
+`$ browserify-glob **/*.spec.js | tap-closer | fumigator | tap-dots` :rocket:
 
 ### node
 ```js
