@@ -1,0 +1,33 @@
+{
+  "name": "browserify-glob",
+  "version": "0.0.0",
+  "description": "simple glob handling for browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/ava",
+    "lint": "./node_modules/.bin/semistandard",
+    "build": "./node_modules/.bin/babel src --presets babel-preset-es2015 --out-dir lib",
+    "prepublish": "npm run lint && npm run build"
+  },
+  "keywords": [
+    "browserify",
+    "glob"
+  ],
+  "files": [
+    "lib",
+    "bin",
+    "index.js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "glob": "^7.0.3"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "semistandard": "^8.0.0"
+  }
+}
