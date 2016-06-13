@@ -1,6 +1,6 @@
 {
   "name": "browserify-glob",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "simple glob handling for browserify",
   "main": "index.js",
   "repository": "https://github.com/kasperlewau/browserify-glob",
