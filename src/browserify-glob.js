@@ -5,14 +5,14 @@ const browserify = require('browserify');
 
 module.exports = function (pattern) {
   if (!pattern) {
-    throw new Error('No pattern given');
+    throw new Error('No pattern given1');
   }
 
-  return glob(pattern, (err, files) => {
+  glob(pattern, (err, files) => {
     if (err) {
       throw new Error(err.message);
     }
 
-    return browserify(files).bundle();
+    browserify(files).bundle().pipe(process.stdout);
   });
 };
